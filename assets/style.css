@@ -1,0 +1,346 @@
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background: radial-gradient(1200px 500px at top, #0b1220, #020617);
+  color:#e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.text-muted-ui{
+  color:#94a3b8;
+}
+
+/* ===== NAVBAR (LOVABLE STYLE) ===== */
+.navbar{
+  background:#020617;
+  border-bottom:1px solid #1e293b;
+  height:64px;
+  padding:0 24px;
+  display:flex;
+  align-items:center;
+}
+
+.navbar .container-fluid{
+  height:100%;
+  display:flex;
+  align-items:center;
+}
+
+.navbar-brand{
+  color:#fff !important;
+  font-weight:700;
+  font-size:18px;
+  margin-right:32px;
+}
+
+.navbar-nav{
+  align-items:center;
+  gap:6px;
+}
+
+.nav-link{
+  color:#cbd5f5 !important;
+  padding:8px 14px;
+  border-radius:10px;
+  font-weight:500;
+  line-height:1;
+}
+
+.nav-link:hover{
+  background:#0f172a;
+}
+
+.nav-link.active{
+  background:#0f172a;
+  color:#38bdf8 !important;
+}
+
+/* ===== PAGE ===== */
+.container-page{
+  padding:40px 60px;
+}
+@media(max-width:768px){
+  .container-page{
+    padding:20px;
+  }
+}
+
+/* ===== PRIMARY BUTTON ===== */
+.btn-primary-ui{
+  background:#22d3ee;
+  color:#020617;
+  border:none;
+  font-weight:600;
+  padding:8px 16px;
+  border-radius:10px;
+}
+.btn-primary-ui:hover{
+  background:#38bdf8;
+}
+
+/* ===== SECTION BUTTON ===== */
+.section-btn{
+  display:inline-block;
+  padding:6px 14px;
+  border:1px solid #1e293b;
+  border-radius:999px;
+  background:#020617;
+  font-size:14px;
+}
+
+/* ===== GENERIC CARD (LOVABLE) ===== */
+.card-ui{
+  background:#020617;
+  border:1px solid #1f2937;
+  border-radius:16px;
+  padding:22px;
+}
+
+/* ===== SUMMARY CARDS ===== */
+.summary-card{
+  background:#020617;
+  border:1px solid #1f2937;
+  border-radius:16px;
+  padding:20px;
+  height:100%;
+}
+
+.card-label{
+  font-size:13px;
+  color:#94a3b8;
+  margin-bottom:6px;
+}
+
+.card-value{
+  font-size:22px;
+  font-weight:600;
+}
+
+.card-icon{
+  width:40px;
+  height:40px;
+  background:#0f172a;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#38bdf8;
+  font-size:18px;
+}
+
+/* ===== BADGE ===== */
+.badge-active{
+  background:#052e16;
+  color:#22c55e;
+  padding:4px 12px;
+  border-radius:999px;
+  font-size:12px;
+}
+
+/* ===== ALL SITES CARD ===== */
+.site-card{
+  background:#020617;
+  border:1px solid #1f2937;
+  border-radius:16px;
+  padding:20px;
+  height:100%;
+}
+
+.site-card:hover{
+  border-color:#334155;
+}
+
+.site-card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:14px;
+}
+
+.site-icon{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  background:#0f172a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#38bdf8;
+  font-size:18px;
+}
+
+.site-name{
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:4px;
+}
+
+.site-location{
+  font-size:14px;
+  color:#94a3b8;
+}
+
+.site-client{
+  font-size:14px;
+  margin-top:10px;
+}
+
+.site-meta{
+  font-size:13px;
+  color:#94a3b8;
+  margin-top:12px;
+}
+
+/* ===== DAILY PROGRESS (LOVABLE STYLE) ===== */
+
+.progress-card{
+  background:#020617;
+  border:1px solid #1f2937;
+  border-radius:16px;
+  padding:18px 0;
+}
+
+/* header inside progress card */
+.progress-header{
+  padding:0 18px 12px 18px;
+  border-bottom:1px solid #1f2937;
+}
+
+/* embedded table header */
+.progress-table-head{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 18px;
+  background:#0f172a;
+  font-size:12px;
+  color:#94a3b8;
+  letter-spacing:0.4px;
+}
+
+/* clickable rows */
+.progress-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 18px;
+  cursor:pointer;
+}
+
+.progress-row:hover{
+  background:#0f172a;
+}
+
+.progress-row + .progress-row{
+  border-top:1px solid #1f2937;
+}
+
+/* clean links (no blue, no underline) */
+.link-clean{
+  color:#e5e7eb;
+  text-decoration:none;
+}
+
+.link-clean:hover{
+  color:#e5e7eb;
+}
+
+/* site name link */
+.site-link{
+  font-weight:600;
+}
+
+/* ===== SEARCH BAR (LOVABLE STYLE) ===== */
+.search-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#020617;
+  border:1px solid #1f2937;
+  border-radius:14px;
+  padding:10px 14px;
+}
+
+.search-box input{
+  flex:1;
+  background:transparent;
+  border:none;
+  outline:none;
+  color:#e5e7eb;
+  font-size:14px;
+}
+
+.search-box input::placeholder{
+  color:#94a3b8;
+}
+
+.search-btn{
+  background:#0f172a;
+  border:1px solid #1f2937;
+  color:#e5e7eb;
+  padding:6px 14px;
+  border-radius:10px;
+  font-size:14px;
+}
+
+.search-btn:hover{
+  background:#020617;
+}
+/* ===== BILLS PAGE (LOVABLE STYLE) ===== */
+
+.bill-card{
+  background:#020617;
+  border:1px solid #1f2937;
+  border-radius:16px;
+  padding:18px 0;
+}
+
+.bill-header{
+  padding:0 18px 12px 18px;
+  border-bottom:1px solid #1f2937;
+}
+
+.bill-table-head{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 18px;
+  background:#0f172a;
+  font-size:12px;
+  color:#94a3b8;
+  letter-spacing:0.4px;
+}
+
+.bill-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 18px;
+  cursor:pointer;
+}
+
+.bill-row:hover{
+  background:#0f172a;
+}
+
+.bill-row + .bill-row{
+  border-top:1px solid #1f2937;
+}
+
+.amount-paid{
+  color:#22c55e;
+  font-weight:500;
+}
+
+.amount-pending{
+  color:#facc15;
+  font-weight:500;
+}

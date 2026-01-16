@@ -1,0 +1,175 @@
+/* =====================================================
+   RESPONSIVE STYLES (ALL PAGES)
+   ===================================================== */
+
+/* ---------- LARGE SCREENS (<=1200px) ---------- */
+@media (max-width: 1200px){
+  .container-page{
+    padding:32px;
+  }
+}
+
+/* ---------- TABLET & BELOW (<=992px) ---------- */
+@media (max-width: 992px){
+
+  /* Navbar base */
+  .navbar{
+    height:auto;
+    padding:12px 16px;
+  }
+
+  /* Summary cards */
+  .summary-card{
+    padding:18px;
+  }
+
+  /* Financial overview spacing */
+  .card-ui .row.text-center > div{
+    margin-bottom:16px;
+  }
+
+  /* Site cards */
+  .site-card{
+    padding:18px;
+  }
+
+  /* Progress & bill cards */
+  .progress-card,
+  .bill-card{
+    padding:16px 0;
+  }
+}
+
+/* =====================================================
+   MOBILE NAVBAR (LOVABLE STYLE)
+   ===================================================== */
+@media (max-width: 991px){
+
+  /* Keep brand + toggle on one line */
+  .navbar .container-fluid{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .navbar-brand{
+    margin:0;
+  }
+
+  /* Toggle button */
+  .navbar-toggler{
+    display:block;
+    border:1px solid #1e293b;
+  }
+
+  .navbar-toggler-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229,231,235,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  /* Dropdown container */
+  .navbar-collapse{
+    width:100%;
+    background:#020617;
+    border:1px solid #1f2937;
+    border-radius:16px;
+    margin-top:12px;
+    padding:14px 12px;
+  }
+
+  /* Center menu items */
+  .navbar-nav{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+  }
+
+  .navbar-nav .nav-item{
+    width:100%;
+    text-align:center;
+  }
+
+  .navbar-nav .nav-link{
+    width:100%;
+    padding:10px 14px;
+    border-radius:12px;
+    text-align:center;
+  }
+
+  .navbar-nav .nav-link.active{
+    background:#0f172a;
+    color:#38bdf8 !important;
+  }
+
+  /* Search bar stack */
+  .search-box{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .search-btn{
+    width:100%;
+  }
+
+  /* Headers stack */
+  .progress-header,
+  .bill-header{
+    flex-direction:column;
+    gap:6px;
+  }
+}
+
+/* ---------- SMALL MOBILE (<=480px) ---------- */
+@media (max-width: 480px){
+
+  .navbar-brand{
+    font-size:16px;
+  }
+
+  .nav-link{
+    font-size:14px;
+  }
+
+  .card-ui,
+  .summary-card,
+  .site-card{
+    padding:16px;
+  }
+
+  .card-icon,
+  .site-icon{
+    width:36px;
+    height:36px;
+    font-size:16px;
+  }
+
+  .card-value{
+    font-size:20px;
+  }
+
+  .progress-row,
+  .bill-row{
+    padding:12px 14px;
+    font-size:14px;
+  }
+
+  .progress-table-head,
+  .bill-table-head{
+    padding:8px 14px;
+    font-size:11px;
+  }
+}
+
+/* ---------- DESKTOP (>=992px) ---------- */
+@media (min-width: 992px){
+  .navbar-toggler{
+    display:none;
+  }
+
+  .navbar-collapse{
+    display:flex !important;
+    flex-basis:auto;
+  }
+}
